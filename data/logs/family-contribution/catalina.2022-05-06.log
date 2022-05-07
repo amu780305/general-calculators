@@ -1,0 +1,332 @@
+2022-05-06 17:19:49 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution] & group[DEFAULT_GROUP]
+2022-05-06 17:19:49 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution.yml] & group[DEFAULT_GROUP]
+2022-05-06 17:19:49 | INFO  | main | TID: N/A | org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration | Located property source: [BootstrapPropertySource {name='bootstrapProperties-family-contribution-uat.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-core-common-mysql-uat.yml,DEFAULT_GROUP'}]
+2022-05-06 17:19:49 | INFO  | main | TID: N/A | com.wowoohr.calculators.family.contribution.FamilyContributionApplication | The following profiles are active: uat
+2022-05-06 17:19:50 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 17:19:50 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 17:19:50 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2022-05-06 17:19:50 | WARN  | main | TID: N/A | org.springframework.boot.actuate.endpoint.EndpointId | Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-06 17:19:50 | INFO  | main | TID: N/A | org.springframework.cloud.context.scope.GenericScope | BeanFactory id=1e03c614-29a3-34ba-96c1-e5ed2fed7f20
+2022-05-06 17:19:51 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat initialized with port(s): 8080 (http)
+2022-05-06 17:19:51 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-06 17:19:51 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Starting service [Tomcat]
+2022-05-06 17:19:51 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-06 17:19:51 | INFO  | main | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2022-05-06 17:19:51 | INFO  | main | TID: N/A | org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1870 ms
+2022-05-06 17:19:51 | WARN  | main | TID: N/A | org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TFamilyContributionCopysServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TFamilyContributionCopysMapper' defined in file [/Users/chenhaomu/gityunxiao/general-calculators/calculators-family-contribution/target/classes/com/wowoohr/calculators/family/contribution/mapper/TFamilyContributionCopysMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/wowoohr/calculators/family/contribution/config/MybatisPlusConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contribution' defined in class path resource [com/wowoohr/calculators/family/contribution/config/MybatisPlusConfig.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine suitable jdbc url
+2022-05-06 17:19:51 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Stopping service [Tomcat]
+2022-05-06 17:19:51 | INFO  | main | TID: N/A | org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-06 17:19:51 | ERROR | main | TID: N/A | org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine suitable jdbc url
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-05-06 17:19:51 | WARN  | Thread-6 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Start destroying common HttpClient
+2022-05-06 17:19:51 | WARN  | Thread-6 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Destruction of the end
+2022-05-06 17:24:59 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution] & group[DEFAULT_GROUP]
+2022-05-06 17:24:59 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution.yml] & group[DEFAULT_GROUP]
+2022-05-06 17:24:59 | INFO  | main | TID: N/A | org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration | Located property source: [BootstrapPropertySource {name='bootstrapProperties-family-contribution-uat.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-core-common-mysql-uat.yml,DEFAULT_GROUP'}]
+2022-05-06 17:24:59 | INFO  | main | TID: N/A | com.wowoohr.calculators.family.contribution.FamilyContributionApplication | The following profiles are active: uat
+2022-05-06 17:25:01 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 17:25:01 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 17:25:01 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2022-05-06 17:25:01 | WARN  | main | TID: N/A | org.springframework.boot.actuate.endpoint.EndpointId | Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-06 17:25:01 | INFO  | main | TID: N/A | org.springframework.cloud.context.scope.GenericScope | BeanFactory id=1e03c614-29a3-34ba-96c1-e5ed2fed7f20
+2022-05-06 17:25:02 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat initialized with port(s): 8080 (http)
+2022-05-06 17:25:02 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-06 17:25:02 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Starting service [Tomcat]
+2022-05-06 17:25:02 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-06 17:25:02 | INFO  | main | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2022-05-06 17:25:02 | INFO  | main | TID: N/A | org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 2461 ms
+2022-05-06 17:25:02 | WARN  | main | TID: N/A | org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TFamilyContributionCopysServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TFamilyContributionCopysMapper' defined in file [/Users/chenhaomu/gityunxiao/general-calculators/calculators-family-contribution/target/classes/com/wowoohr/calculators/family/contribution/mapper/TFamilyContributionCopysMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/wowoohr/calculators/family/contribution/config/MybatisPlusConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contribution' defined in class path resource [com/wowoohr/calculators/family/contribution/config/MybatisPlusConfig.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine suitable jdbc url
+2022-05-06 17:25:02 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Stopping service [Tomcat]
+2022-05-06 17:25:02 | INFO  | main | TID: N/A | org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-06 17:25:02 | ERROR | main | TID: N/A | org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine suitable jdbc url
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-05-06 17:25:02 | WARN  | Thread-7 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Start destroying common HttpClient
+2022-05-06 17:25:02 | WARN  | Thread-7 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Destruction of the end
+2022-05-06 18:06:11 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution] & group[DEFAULT_GROUP]
+2022-05-06 18:06:11 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution.yml] & group[DEFAULT_GROUP]
+2022-05-06 18:06:11 | INFO  | main | TID: N/A | org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration | Located property source: [BootstrapPropertySource {name='bootstrapProperties-family-contribution-uat.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-core-common-mysql-uat.yml,DEFAULT_GROUP'}]
+2022-05-06 18:06:11 | INFO  | main | TID: N/A | com.wowoohr.calculators.family.contribution.FamilyContributionApplication | The following profiles are active: uat
+2022-05-06 18:06:13 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 18:06:13 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 18:06:13 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2022-05-06 18:06:13 | WARN  | main | TID: N/A | org.springframework.boot.actuate.endpoint.EndpointId | Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-06 18:06:13 | INFO  | main | TID: N/A | org.springframework.cloud.context.scope.GenericScope | BeanFactory id=1e03c614-29a3-34ba-96c1-e5ed2fed7f20
+2022-05-06 18:06:14 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat initialized with port(s): 8080 (http)
+2022-05-06 18:06:14 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-06 18:06:14 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Starting service [Tomcat]
+2022-05-06 18:06:14 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-06 18:06:14 | INFO  | main | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2022-05-06 18:06:14 | INFO  | main | TID: N/A | org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 2319 ms
+2022-05-06 18:06:14 | WARN  | main | TID: N/A | org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TFamilyContributionCopysServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TFamilyContributionCopysMapper' defined in file [/Users/chenhaomu/gityunxiao/general-calculators1/calculators-family-contribution/target/classes/com/wowoohr/calculators/family/contribution/mapper/TFamilyContributionCopysMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/wowoohr/calculators/family/contribution/config/MybatisPlusConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contribution' defined in class path resource [com/wowoohr/calculators/family/contribution/config/MybatisPlusConfig.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine suitable jdbc url
+2022-05-06 18:06:14 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Stopping service [Tomcat]
+2022-05-06 18:06:14 | INFO  | main | TID: N/A | org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-06 18:06:14 | ERROR | main | TID: N/A | org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine suitable jdbc url
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-05-06 18:06:14 | WARN  | Thread-5 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Start destroying common HttpClient
+2022-05-06 18:06:14 | WARN  | Thread-5 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Destruction of the end
+2022-05-06 18:11:42 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution] & group[DEFAULT_GROUP]
+2022-05-06 18:11:42 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution.yml] & group[DEFAULT_GROUP]
+2022-05-06 18:11:42 | INFO  | main | TID: N/A | org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration | Located property source: [BootstrapPropertySource {name='bootstrapProperties-family-contribution-uat.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-core-common-mysql-uat.yml,DEFAULT_GROUP'}]
+2022-05-06 18:11:42 | INFO  | main | TID: N/A | com.wowoohr.calculators.family.contribution.FamilyContributionApplication | The following profiles are active: uat
+2022-05-06 18:11:44 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 18:11:44 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 18:11:44 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2022-05-06 18:11:44 | WARN  | main | TID: N/A | org.springframework.boot.actuate.endpoint.EndpointId | Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-06 18:11:44 | INFO  | main | TID: N/A | org.springframework.cloud.context.scope.GenericScope | BeanFactory id=1e03c614-29a3-34ba-96c1-e5ed2fed7f20
+2022-05-06 18:11:45 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat initialized with port(s): 8080 (http)
+2022-05-06 18:11:45 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-06 18:11:45 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Starting service [Tomcat]
+2022-05-06 18:11:45 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-06 18:11:45 | INFO  | main | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2022-05-06 18:11:45 | INFO  | main | TID: N/A | org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 2488 ms
+2022-05-06 18:11:45 | WARN  | main | TID: N/A | org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TFamilyContributionCopysServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TFamilyContributionCopysMapper' defined in file [/Users/chenhaomu/gityunxiao/general-calculators1/calculators-family-contribution/target/classes/com/wowoohr/calculators/family/contribution/mapper/TFamilyContributionCopysMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/wowoohr/calculators/family/contribution/config/MybatisPlusConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contribution' defined in class path resource [com/wowoohr/calculators/family/contribution/config/MybatisPlusConfig.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine suitable jdbc url
+2022-05-06 18:11:45 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Stopping service [Tomcat]
+2022-05-06 18:11:45 | INFO  | main | TID: N/A | org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-06 18:11:45 | ERROR | main | TID: N/A | org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine suitable jdbc url
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-05-06 18:11:45 | WARN  | Thread-6 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Start destroying common HttpClient
+2022-05-06 18:11:45 | WARN  | Thread-6 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Destruction of the end
+2022-05-06 18:23:43 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution] & group[DEFAULT_GROUP]
+2022-05-06 18:23:43 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution.yml] & group[DEFAULT_GROUP]
+2022-05-06 18:23:43 | INFO  | main | TID: N/A | org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration | Located property source: [BootstrapPropertySource {name='bootstrapProperties-family-contribution-uat.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-core-common-mysql-uat.yml,DEFAULT_GROUP'}]
+2022-05-06 18:23:43 | INFO  | main | TID: N/A | com.wowoohr.calculators.family.contribution.FamilyContributionApplication | The following profiles are active: uat
+2022-05-06 18:23:44 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 18:23:44 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 18:23:44 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2022-05-06 18:23:45 | WARN  | main | TID: N/A | org.springframework.boot.actuate.endpoint.EndpointId | Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-06 18:23:45 | INFO  | main | TID: N/A | org.springframework.cloud.context.scope.GenericScope | BeanFactory id=1e03c614-29a3-34ba-96c1-e5ed2fed7f20
+2022-05-06 18:23:45 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat initialized with port(s): 8080 (http)
+2022-05-06 18:23:45 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-06 18:23:45 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Starting service [Tomcat]
+2022-05-06 18:23:45 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-06 18:23:45 | INFO  | main | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2022-05-06 18:23:45 | INFO  | main | TID: N/A | org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1880 ms
+2022-05-06 18:23:46 | WARN  | main | TID: N/A | org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TFamilyContributionCopysServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TFamilyContributionCopysMapper' defined in file [/Users/chenhaomu/gityunxiao/general-calculators1/calculators-family-contribution/target/classes/com/wowoohr/calculators/family/contribution/mapper/TFamilyContributionCopysMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/wowoohr/calculators/family/contribution/config/MybatisPlusConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contribution' defined in class path resource [com/wowoohr/calculators/family/contribution/config/MybatisPlusConfig.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine suitable jdbc url
+2022-05-06 18:23:46 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Stopping service [Tomcat]
+2022-05-06 18:23:46 | INFO  | main | TID: N/A | org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-06 18:23:46 | ERROR | main | TID: N/A | org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine suitable jdbc url
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-05-06 18:23:46 | WARN  | Thread-6 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Start destroying common HttpClient
+2022-05-06 18:23:46 | WARN  | Thread-6 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Destruction of the end
+2022-05-06 20:42:19 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution] & group[DEFAULT_GROUP]
+2022-05-06 20:42:19 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution.yml] & group[DEFAULT_GROUP]
+2022-05-06 20:42:19 | INFO  | main | TID: N/A | org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration | Located property source: [BootstrapPropertySource {name='bootstrapProperties-family-contribution-uat.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-core-common-mysql-uat.yml,DEFAULT_GROUP'}]
+2022-05-06 20:42:19 | INFO  | main | TID: N/A | com.wowoohr.calculators.family.contribution.CalculatorsFamilyApplication | The following profiles are active: uat
+2022-05-06 20:42:21 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 20:42:21 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 20:42:21 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2022-05-06 20:42:21 | WARN  | main | TID: N/A | org.springframework.boot.actuate.endpoint.EndpointId | Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-06 20:42:21 | WARN  | main | TID: N/A | org.mybatis.spring.mapper.ClassPathMapperScanner | No MyBatis mapper was found in '[com.wowoohr.calculators.family.contribution.mapper]' package. Please check your configuration.
+2022-05-06 20:42:21 | INFO  | main | TID: N/A | org.springframework.cloud.context.scope.GenericScope | BeanFactory id=2758ed74-571e-38d7-bef3-1de8af581215
+2022-05-06 20:42:21 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat initialized with port(s): 8080 (http)
+2022-05-06 20:42:21 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-06 20:42:21 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Starting service [Tomcat]
+2022-05-06 20:42:21 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-06 20:42:21 | INFO  | main | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2022-05-06 20:42:21 | INFO  | main | TID: N/A | org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1811 ms
+2022-05-06 20:42:22 | INFO  | main | TID: N/A | org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver | Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-06 20:42:22 | WARN  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | No URLs will be polled as dynamic configuration sources.
+2022-05-06 20:42:22 | INFO  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-06 20:42:22 | WARN  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | No URLs will be polled as dynamic configuration sources.
+2022-05-06 20:42:22 | INFO  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-06 20:42:23 | INFO  | main | TID: N/A | org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor | Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-06 20:42:23 | INFO  | main | TID: N/A | org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler | Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-05-06 20:42:23 | WARN  | main | TID: N/A | org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration | The necessary spring property 'rocketmq.name-server' is not defined, all rockertmq beans creation are skipped!
+2022-05-06 20:42:23 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Starting ProtocolHandler ["http-nio-8080"]
+2022-05-06 20:42:24 | WARN  | main | TID: N/A | org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-05-06 20:42:24 | INFO  | main | TID: N/A | org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor | Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-06 20:42:31 | INFO  | main | TID: N/A | com.alibaba.druid.pool.DruidDataSource | {dataSource-0} closing ...
+2022-05-06 20:42:31 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Pausing ProtocolHandler ["http-nio-8080"]
+2022-05-06 20:42:31 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Stopping service [Tomcat]
+2022-05-06 20:42:31 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Stopping ProtocolHandler ["http-nio-8080"]
+2022-05-06 20:42:31 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Destroying ProtocolHandler ["http-nio-8080"]
+2022-05-06 20:42:31 | INFO  | main | TID: N/A | org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-06 20:42:31 | ERROR | main | TID: N/A | org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-05-06 20:42:44 | WARN  | Thread-27 | TID: N/A | com.alibaba.nacos.common.notify.NotifyCenter | [NotifyCenter] Start destroying Publisher
+2022-05-06 20:42:44 | WARN  | Thread-8 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Start destroying common HttpClient
+2022-05-06 20:42:44 | WARN  | Thread-27 | TID: N/A | com.alibaba.nacos.common.notify.NotifyCenter | [NotifyCenter] Destruction of the end
+2022-05-06 20:42:44 | WARN  | Thread-8 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Destruction of the end
+2022-05-06 20:42:55 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution] & group[DEFAULT_GROUP]
+2022-05-06 20:42:55 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution.yml] & group[DEFAULT_GROUP]
+2022-05-06 20:42:55 | INFO  | main | TID: N/A | org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration | Located property source: [BootstrapPropertySource {name='bootstrapProperties-family-contribution-uat.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-core-common-mysql-uat.yml,DEFAULT_GROUP'}]
+2022-05-06 20:42:55 | INFO  | main | TID: N/A | com.wowoohr.calculators.family.contribution.CalculatorsFamilyApplication | The following profiles are active: uat
+2022-05-06 20:42:56 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 20:42:56 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 20:42:56 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2022-05-06 20:42:56 | WARN  | main | TID: N/A | org.springframework.boot.actuate.endpoint.EndpointId | Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-06 20:42:56 | WARN  | main | TID: N/A | org.mybatis.spring.mapper.ClassPathMapperScanner | No MyBatis mapper was found in '[com.wowoohr.calculators.family.contribution.mapper]' package. Please check your configuration.
+2022-05-06 20:42:56 | INFO  | main | TID: N/A | org.springframework.cloud.context.scope.GenericScope | BeanFactory id=2758ed74-571e-38d7-bef3-1de8af581215
+2022-05-06 20:42:56 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat initialized with port(s): 8080 (http)
+2022-05-06 20:42:56 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-06 20:42:56 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Starting service [Tomcat]
+2022-05-06 20:42:56 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-06 20:42:57 | INFO  | main | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2022-05-06 20:42:57 | INFO  | main | TID: N/A | org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1773 ms
+2022-05-06 20:42:58 | INFO  | main | TID: N/A | org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver | Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-06 20:42:58 | WARN  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | No URLs will be polled as dynamic configuration sources.
+2022-05-06 20:42:58 | INFO  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-06 20:42:58 | WARN  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | No URLs will be polled as dynamic configuration sources.
+2022-05-06 20:42:58 | INFO  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-06 20:42:58 | INFO  | main | TID: N/A | org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor | Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-06 20:42:58 | INFO  | main | TID: N/A | org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler | Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-05-06 20:42:58 | WARN  | main | TID: N/A | org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration | The necessary spring property 'rocketmq.name-server' is not defined, all rockertmq beans creation are skipped!
+2022-05-06 20:42:58 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Starting ProtocolHandler ["http-nio-8080"]
+2022-05-06 20:42:58 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-06 20:42:59 | INFO  | main | TID: N/A | com.alibaba.cloud.nacos.registry.NacosServiceRegistry | nacos registry, DEFAULT_GROUP family-contribution 192.168.3.6:8080 register finished
+2022-05-06 20:42:59 | INFO  | main | TID: N/A | com.wowoohr.calculators.family.contribution.CalculatorsFamilyApplication | Started CalculatorsFamilyApplication in 5.73 seconds (JVM running for 7.619)
+2022-05-06 20:42:59 | INFO  | RMI TCP Connection(3)-127.0.0.1 | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-06 20:42:59 | INFO  | RMI TCP Connection(3)-127.0.0.1 | TID: N/A | org.springframework.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+2022-05-06 20:42:59 | INFO  | RMI TCP Connection(3)-127.0.0.1 | TID: N/A | org.springframework.web.servlet.DispatcherServlet | Completed initialization in 4 ms
+2022-05-06 20:42:59 | INFO  | RMI TCP Connection(2)-127.0.0.1 | TID: N/A | com.alibaba.druid.pool.DruidDataSource | {dataSource-1} inited
+2022-05-06 20:46:17 | WARN  | Thread-24 | TID: N/A | com.alibaba.nacos.common.notify.NotifyCenter | [NotifyCenter] Start destroying Publisher
+2022-05-06 20:46:17 | WARN  | Thread-24 | TID: N/A | com.alibaba.nacos.common.notify.NotifyCenter | [NotifyCenter] Destruction of the end
+2022-05-06 20:46:17 | WARN  | Thread-5 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Start destroying common HttpClient
+2022-05-06 20:46:17 | WARN  | Thread-5 | TID: N/A | com.alibaba.nacos.common.http.HttpClientBeanHolder | [HttpClientBeanHolder] Destruction of the end
+2022-05-06 20:46:17 | INFO  | SpringContextShutdownHook | TID: N/A | org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler | Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-05-06 20:46:17 | INFO  | SpringContextShutdownHook | TID: N/A | com.alibaba.cloud.nacos.registry.NacosServiceRegistry | De-registering from Nacos Server now...
+2022-05-06 20:46:17 | INFO  | SpringContextShutdownHook | TID: N/A | com.alibaba.cloud.nacos.registry.NacosServiceRegistry | De-registration finished.
+2022-05-06 20:46:25 | INFO  | SpringContextShutdownHook | TID: N/A | org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor | Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-06 20:46:25 | WARN  | SpringContextShutdownHook | TID: N/A | org.springframework.beans.factory.support.DisposableBeanAdapter | Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-05-06 20:46:25 | INFO  | SpringContextShutdownHook | TID: N/A | com.alibaba.druid.pool.DruidDataSource | {dataSource-1} closing ...
+2022-05-06 20:46:25 | INFO  | SpringContextShutdownHook | TID: N/A | com.alibaba.druid.pool.DruidDataSource | {dataSource-1} closed
+2022-05-06 20:46:32 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution] & group[DEFAULT_GROUP]
+2022-05-06 20:46:32 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[family-contribution.yml] & group[DEFAULT_GROUP]
+2022-05-06 20:46:32 | INFO  | main | TID: N/A | org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration | Located property source: [BootstrapPropertySource {name='bootstrapProperties-family-contribution-uat.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-family-contribution,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-core-common-mysql-uat.yml,DEFAULT_GROUP'}]
+2022-05-06 20:46:32 | INFO  | main | TID: N/A | com.wowoohr.calculators.family.contribution.CalculatorsFamilyApplication | The following profiles are active: uat
+2022-05-06 20:46:33 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-06 20:46:33 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-06 20:46:33 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2022-05-06 20:46:33 | WARN  | main | TID: N/A | org.springframework.boot.actuate.endpoint.EndpointId | Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-06 20:46:33 | INFO  | main | TID: N/A | org.springframework.cloud.context.scope.GenericScope | BeanFactory id=cb719f36-05d0-3006-a4f6-3628db6cde33
+2022-05-06 20:46:34 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat initialized with port(s): 8080 (http)
+2022-05-06 20:46:34 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-06 20:46:34 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Starting service [Tomcat]
+2022-05-06 20:46:34 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-06 20:46:34 | INFO  | main | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2022-05-06 20:46:34 | INFO  | main | TID: N/A | org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1755 ms
+2022-05-06 20:46:35 | INFO  | main | TID: N/A | org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver | Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-06 20:46:35 | WARN  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | No URLs will be polled as dynamic configuration sources.
+2022-05-06 20:46:35 | INFO  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-06 20:46:35 | WARN  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | No URLs will be polled as dynamic configuration sources.
+2022-05-06 20:46:35 | INFO  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-06 20:46:35 | INFO  | main | TID: N/A | org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor | Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-06 20:46:35 | INFO  | main | TID: N/A | org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler | Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-05-06 20:46:35 | WARN  | main | TID: N/A | org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration | The necessary spring property 'rocketmq.name-server' is not defined, all rockertmq beans creation are skipped!
+2022-05-06 20:46:36 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Starting ProtocolHandler ["http-nio-8080"]
+2022-05-06 20:46:36 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-06 20:46:36 | INFO  | main | TID: N/A | com.alibaba.cloud.nacos.registry.NacosServiceRegistry | nacos registry, DEFAULT_GROUP family-contribution 192.168.3.6:8080 register finished
+2022-05-06 20:46:36 | INFO  | main | TID: N/A | com.wowoohr.calculators.family.contribution.CalculatorsFamilyApplication | Started CalculatorsFamilyApplication in 6.29 seconds (JVM running for 7.351)
+2022-05-06 20:46:36 | INFO  | RMI TCP Connection(2)-127.0.0.1 | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-06 20:46:36 | INFO  | RMI TCP Connection(2)-127.0.0.1 | TID: N/A | org.springframework.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+2022-05-06 20:46:36 | INFO  | RMI TCP Connection(2)-127.0.0.1 | TID: N/A | org.springframework.web.servlet.DispatcherServlet | Completed initialization in 5 ms
+2022-05-06 20:46:36 | INFO  | RMI TCP Connection(3)-127.0.0.1 | TID: N/A | com.alibaba.druid.pool.DruidDataSource | {dataSource-1} inited

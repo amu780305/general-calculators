@@ -1,0 +1,3 @@
+# Project exclude paths
+/calculators-family-contribution/target/
+/calculators-service/target/
