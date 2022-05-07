@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2022-05-06
  */
 @RestController
-@RequestMapping("/calculators")
+@RequestMapping("/v1/calculators")
 public class TCityController {
 
 }

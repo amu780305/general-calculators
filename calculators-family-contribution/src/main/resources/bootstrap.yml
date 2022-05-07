@@ -1,10 +1,8 @@
 server:
   #端口号
   port: 8080
-
-mybatis-plus:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+  servlet:
+    context-path: /familyContribution
 
 spring:
   main:
