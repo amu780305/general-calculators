@@ -1,6 +1,9 @@
 server:
   #端口号
   port: 8080
+  mybatis-plus:
+    configuration:
+      log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl #关闭sql日志
 
 spring:
   main:
@@ -8,7 +11,7 @@ spring:
   profiles:
     active: ${env:uat}
   application:
-    name: calculators
+    name: family-contribution
   cloud:
     nacos:
       discovery:

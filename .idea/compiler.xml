@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="calculators-facade" />
-        <module name="calculators-family-contribution" />
         <module name="calculators-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="calculators-family-contribution" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

@@ -1,9 +1,18 @@
 package com.wowoohr.calculators.controller;
 
 
+import com.wowoohr.calculators.form.BaseForm;
+import com.wowoohr.calculators.service.ITCityService;
+import com.wowoohr.core.common.core.annotation.UserAccess;
+import com.wowoohr.core.common.core.error.ServiceException;
+import com.wowoohr.core.common.core.result.ApiResponseT;
+import com.wowoohr.core.common.core.user.WowooUserInfoContainer;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * <p>
@@ -16,5 +25,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/v1/calculators")
 public class TCityController {
+    @Resource
+    ITCityService itCityService;
+
+    @RequestMapping(value = "/getCityList", method = RequestMethod.POST)
+    public ApiResponseT getCityListForApp() {
+        return ApiResponseT.success(itCityService.getCityList());
+    }
 
 }

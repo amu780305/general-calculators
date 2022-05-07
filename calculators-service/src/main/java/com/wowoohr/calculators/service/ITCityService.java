@@ -2,6 +2,9 @@ package com.wowoohr.calculators.service;
 
 import com.wowoohr.calculators.entity.TCity;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.wowoohr.calculators.vo.TCityVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +15,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2022-05-06
  */
 public interface ITCityService extends IService<TCity> {
+
+    List<TCityVo> getCityList();
 
 }
